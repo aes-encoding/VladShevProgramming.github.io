@@ -38,9 +38,9 @@ li {
     float: left;
 }
 
-a:link, a:visited {
+nav a:link, nav a:visited {
     display: block;
-    width: 342px;
+    width: 340px;
     font-weight: bold;
     color: #FFFFFF;
     background-color: #98bf21;
