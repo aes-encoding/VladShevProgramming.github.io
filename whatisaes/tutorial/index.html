@@ -51,32 +51,33 @@
 		<p>Here's what they mean:</p>
 		<ul>
 			<li>[Settings] - the settings section of init.aesp</li>
-			<li>input - the path of the</li>
-			<li>output="path"</li>
-			<li>chk_output="path"</li>
-			<li>keys=["password1","password2","password3"]</li>
-			<li><numKeys=[int,int,int]</li>
-			<li>sequence="e/d"</li>
-			<li>[Debug]</li>
-			<li>printInput=bool</li>
-			<li>printOutput=bool</li>
-			<li>printProg=bool</li>
-			<li>[P_Input]</li>
-			<li>printKeys="all"/[int,int,int]</li>
-			<li>printNumKeys="all"/[int,int,int]</li>
-			<li>printInputFrom=bool</li>
-			<li>printOutputTo=bool</li>
-			<li>printChkOutputTo=bool</li>
-			<li>[P_Output]</li>
-			<li>printOutputedTo=bool</li>
-			<li>printChkOutputedTo=bool</li>
-			<li>printInitSize=bool</li>
-			<li>printFinalSize=bool</li>
-			<li>printCompRatio=bool</li>
-			<li>[Adv]</li>
-			<li>encLtrs=""</li>
-			<li>decLtrs=""</li>
-			<li>chkLtrs=""</li>
+			<li>input - the path of the file to be encrypted/decrypted</li>
+			<li>output - the path where the encrypted/decrypted file is to go</li>
+			<li>chk_output - the path where the check-encrypted file is to go</li>
+			<li>keys - any number of string keys, in the above format</li>
+			<li><numKeys - the same number as the above keys of positive -non-zero integers, in the above format</li>
+			<li>sequence - e or d (encryption or decryption)</li>
+			<li>[Debug] - the dubg section of init.aesp - not necessary</li>
+			<li>printInput - whether or not to print the information (specified in the print-input section of init.aesp) before the program runs</li>
+			<li>printOutput - whether or not to print the information (specified in the print-output section of init.aesp) before the program runs</li>
+			<li>printProg - whether or not to print the progress while the program is running</li>
+			<li>[P_Input] - the print-input section of init.aesp</li>
+			<li>printKeys - what keys to print before the program runs - either all or several, specified by list-indexes</li>
+			<li>printNumKeys - what combination keys to print before the program runs - either all or several, specified by list-indexes</li>
+			<li>printInputFrom - whether ot not to print the initial file's location before the program runs</li>
+			<li>printOutputTo - whether ot not to print the final file's location before the program runs</li>
+			<li>printChkOutputTo - whether or not to print the check-enrypted file's location before the program runs</li>
+			<li>[P_Output] - the print-output section of init.aesp</li>
+			<li>printOutputedTo - whether or not to print the final file's location after the program runs</li>
+			<li>printChkOutputedTo - whether or not to print the check-encrypted file's location after the program runs</li>
+			<li>printInitSize - whether or not to print the initial file's size after the program runs</li>
+			<li>printFinalSize - whether or not to print the final file's size after the program runs</li>
+			<li>printCompRatio - whether or not to print the compression ratio of the sizes between the initial abd final files (derived by final/initial)</li>
+			<li>[Adv] - the advanced section of init.aesp</li>
+			<li>encLtrs - the type of file made after encryption</li>
+			<li>decLtrs - the type of file made after decryption</li>
+			<li>chkLtrs - the type of file made after check-encryption</li>
 		</ul>
+		<p>The hs_init.aesp has a very similar format wih the exception of the debug, print-input and print-output sections.</p>
 	</body>
 </html>
