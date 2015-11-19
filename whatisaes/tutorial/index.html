@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<h1>Writting init.aesp by hand</h1>
+	</head>
+	<body>
+		<p>The init.aesp file contains all of the changable settings used by AES.exe
+		and ED.exe. In its format, it is quite similar to a .ini file, however there
+		are some major differences.</p>
+		
+		<p>Note: The lines/sections in the init.aesp file can come in any order and,
+		if not found, will be set to their defaults (though some lines, of course.
+		are necessary). Making an (or setting a) erroneous line/value will not crash
+		the program, but will be ignored - so commenting is easy.</p>
+
+		<p>The init.aesp file consists of sections and lines: sections are in the format
+		of "[SectionName]" and lines are in the format of "setting=value" (Ignore the
+		quotation marks). They all are case-sensitive and space-sensitive.</p>
+
+		<p>The general format is as follows (double quotes mean string value, int means
+		integer value, bool means boolean(true/false)).</p>
+
+		<ul>
+			<li>[Settings]</li>
+			<li>input="path"</li>
+			<li>output="path"</li>
+			<li>chk_output="path"</li>
+			<li>keys=["password1","password2","password3"]</li>
+			<li><numKeys=[int,int,int]</li>
+			<li>sequence="e/d"</li>
+			<li>[Debug]</li>
+			<li>printInput=bool</li>
+			<li>printOutput=bool</li>
+			<li>printProg=bool</li>
+			<li>[P_Input]</li>
+			<li>printKeys="all"/[int,int,int]</li>
+			<li>printNumKeys="all"/[int,int,int]</li>
+			<li>printInputFrom=bool</li>
+			<li>printOutputTo=bool</li>
+			<li>printChkOutputTo=bool</li>
+			<li>[P_Output]</li>
+			<li>printOutputedTo=bool</li>
+			<li>printChkOutputedTo=bool</li>
+			<li>printInitSize=bool</li>
+			<li>printFinalSize=bool</li>
+			<li>printCompRatio=bool</li>
+			<li>[Adv]</li>
+			<li>encLtrs=""</li>
+			<li>decLtrs=""</li>
+			<li>chkLtrs=""</li>
+		</ul>
+		<p>Here's what they mean:</p>
+		<ul>
+			<li>[Settings] - the settings section of init.aesp</li>
+			<li>input - the path of the</li>
+			<li>output="path"</li>
+			<li>chk_output="path"</li>
+			<li>keys=["password1","password2","password3"]</li>
+			<li><numKeys=[int,int,int]</li>
+			<li>sequence="e/d"</li>
+			<li>[Debug]</li>
+			<li>printInput=bool</li>
+			<li>printOutput=bool</li>
+			<li>printProg=bool</li>
+			<li>[P_Input]</li>
+			<li>printKeys="all"/[int,int,int]</li>
+			<li>printNumKeys="all"/[int,int,int]</li>
+			<li>printInputFrom=bool</li>
+			<li>printOutputTo=bool</li>
+			<li>printChkOutputTo=bool</li>
+			<li>[P_Output]</li>
+			<li>printOutputedTo=bool</li>
+			<li>printChkOutputedTo=bool</li>
+			<li>printInitSize=bool</li>
+			<li>printFinalSize=bool</li>
+			<li>printCompRatio=bool</li>
+			<li>[Adv]</li>
+			<li>encLtrs=""</li>
+			<li>decLtrs=""</li>
+			<li>chkLtrs=""</li>
+		</ul>
+	</body>
+</html>
