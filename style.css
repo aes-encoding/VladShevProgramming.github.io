@@ -1,4 +1,4 @@
-body {
+﻿body {
     font-family: arial, helvetica, sans-serif;
     font-size: 14px;
     color: black;
@@ -24,4 +24,10 @@ h1 {
     border-bottom-style: solid;
     border-bottom-width: 0.5em;
     border-bottom-color: #c00;
+}
+
+
+#navigation a {
+    display: block;
+    padding: 20px 10px;
 }
