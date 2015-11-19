@@ -28,6 +28,6 @@ h1 {
 
 
 #navigation a {
-    display: inline;
+    display: inline-block;
     padding: 20px 10px;
 }
