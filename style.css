@@ -27,7 +27,7 @@ h1 {
 }
 
 
-#navigation a {
+nav ul li a {
     display: inline-block;
     padding: 20px 10px;
 }
