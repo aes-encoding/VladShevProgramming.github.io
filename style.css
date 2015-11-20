@@ -14,7 +14,14 @@ p {
 #ul-list {
 	line-height: 0.7em;
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-	font-size: 12px;
+	font-size: 14px;
+	margin: 10px;
+}
+
+#ul-list2 {
+	line-height: 0.7em;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-size: 14px;
 	margin: 10px;
 }
 
