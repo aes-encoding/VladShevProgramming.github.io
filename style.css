@@ -11,6 +11,10 @@ p {
     line-height: 21px;
 }
 
+p.ul-list {
+	line-height: 15px;
+}
+
 h1 {
     color: #ffc;
     background-color: #900;
