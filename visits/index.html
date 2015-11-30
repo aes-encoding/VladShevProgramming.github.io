@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Visit-counter</title>
+		<script>
+			function init () {
+				var divVisits = document.getElementById('divVisits');
+				if (window.sessionStorage) {
+					var visits;
+					if (sessionStorage.visits) {
+						visits = parseInt(sessionStorage.getItem('visits'));
+						visits++;
+					} else {
+						visits = 1;
+					}
+					sessionStorage.setItem('visits',visits);
+					divVisits.innerHTML = 'Session page visits: ' + visits;
+				} else {
+					divVisits = 'Window session storage not avaliable.'
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<p>hello</p>
+		<div id="divVisits"></div>
+	</body>
+</html>
