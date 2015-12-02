@@ -11,7 +11,7 @@
 			<li><a href='../../download/index.html' class="navi">Dowload AES</a></li>
 			<li><a href='../../download_source/index.html' class="navi">Download AES Source Code</a></li>
 		</ul>
-		<h2>AES download package</h2>
+		<h2>For AES.exe, HSED.exe and ED.exe:</h2>
 		<p>The init.aesp file contains all of the changable settings used by AES.exe
 		and ED.exe. In its format, it is quite similar to a .ini file, however there
 		are some major differences.</p>
@@ -62,7 +62,7 @@
 			<p>[Settings] - the settings section of init.aesp</p>
 			<p>input - the path of the file to be encrypted/decrypted</p>
 			<p>output - the path where the encrypted/decrypted file is to go</p>
-			<p>chk_output - the path where the check-encrypted file is to go</p>
+			<p>chk_output - the path where the check-encrypted file is to go (only in ED.exe)</p>
 			<p>keys - any number of string keys, in the above format</p>
 			<p>numKeys - the same number as the above keys of positive non-zero integers, in the above format</p>
 			<p>sequence - e or d (encryption or decryption)</p>
@@ -75,18 +75,28 @@
 			<p>printNumKeys - what combination keys to print before the program runs - either all or several, specified by list-indexes</p>
 			<p>printInputFrom - whether ot not to print the initial file's location before the program runs</p>
 			<p>printOutputTo - whether ot not to print the final file's location before the program runs</p>
-			<p>printChkOutputTo - whether or not to print the check-enrypted file's location before the program runs</p>
+			<p>printChkOutputTo - whether or not to print the check-enrypted file's location before the program runs (only in ED.exe)</p>
 			<p>[P_Output] - the print-output section of init.aesp</p>
 			<p>printOutputedTo - whether or not to print the final file's location after the program runs</p>
-			<p>printChkOutputedTo - whether or not to print the check-encrypted file's location after the program runs</p>
+			<p>printChkOutputedTo - whether or not to print the check-encrypted file's location after the program runs (only in ED.exe)</p>
 			<p>printInitSize - whether or not to print the initial file's size after the program runs</p>
 			<p>printFinalSize - whether or not to print the final file's size after the program runs</p>
 			<p>printCompRatio - whether or not to print the compression ratio of the sizes between the initial abd final files (derived by final/initial)</p>
 			<p>[Adv] - the advanced section of init.aesp</p>
 			<p>encLtrs - the type of file made after encryption</p>
 			<p>decLtrs - the type of file made after decryption</p>
-			<p>chkLtrs - the type of file made after check-encryption</p>
+			<p>chkLtrs - the type of file made after check-encryption (only in ED.exe)</p>
 		</div>
 		<p>The hs_init.aesp has a very similar format wih the exception of the debug, print-input and print-output sections.</p>
+		<p></p>
+		<h2>For ED_B.exe:</h2>
+		<p>As ED_B.exe uses the same initialization file as AES.exe, HSED.exe and ED.exe yet uses a completely different encoding
+		algorithim, there are some differences:</p>
+		<div id="ul-list3">
+			<p>- the Settings/keys portion has a different format. Use keys="password" as ED_B.exe uses only one password.</p>
+			<p>- the Settings/numKeys is pointless as ED_B.exe does not use combination indexes.</p>
+			<p>- as ED_B.exe only uses one password, for the P_Input/printKeys use printKeys="all" - strange things may happen if you don't.</p>
+			<p>- of course, P_input/printNumKeys is pointless.</p>
+		</div>
 	</body>
 </html>
