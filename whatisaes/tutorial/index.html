@@ -93,6 +93,7 @@
 		<p>As ED_B.exe uses the same initialization file as AES.exe, HSED.exe and ED.exe yet uses a completely different encoding
 		algorithim, there are some differences:</p>
 		<div id="ul-list3">
+			<p>- there is a new field - Settings/passEnc="" . This is the optional password-encoding (only in 1.0.2 and up) used to encode the password from a string into bytes. Working encodings are: utf-8, utf-16, utf-32, utf-32-le, utf-32-be, ascii, ansi and latin-1. Others may work, but not guaranteed</p>
 			<p>- the Settings/keys portion has a different format. Use keys="[password]" as ED_B.exe uses only one password.</p>
 			<p>- the Settings/numKeys is pointless as ED_B.exe does not use combination indexes.</p>
 			<p>- as ED_B.exe only uses one password, for the P_Input/printKeys use printKeys="all" - strange things may happen if you don't.</p>
